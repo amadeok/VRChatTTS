@@ -1,5 +1,6 @@
 # VRChatTTS
-Text to speech helper to use Balabolka with VRChat
+Text to speech helper to use Balabolka with VRChat.
+
 This is 100 % safe, its not a mod, nor an injector nor a hack, it doesn't require special avatar in VRChat. It works by sending mouse clicks and keystrokes.
 
 Requirements:
