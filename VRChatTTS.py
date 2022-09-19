@@ -53,6 +53,7 @@ class helper:
         shell.SendKeys('%')
 
     def speak_with_word(self):
+        print("\n Speaking with word")
         pyautogui.press('home')  
         pyautogui.keyDown('up') 
         pyautogui.keyDown('ctrl')  
@@ -60,9 +61,12 @@ class helper:
         pyautogui.keyUp('ctrl')  
 
     def speak_with_balabolka(self):
+        print("\n Speaking with balabolka")
+
         pyautogui.press('f5')  
 
     def focus_speaker(self):
+        print("\nFocusing balabolka window")
         rect = win32gui.GetWindowRect(self.driver_win_handle)
         pyautogui.click(rect[0] + 30, rect[1] + 30)
         win32gui.ShowWindow(self.driver_win_handle, win32con.SW_MAXIMIZE)
@@ -70,6 +74,7 @@ class helper:
         win32gui.SetForegroundWindow(self.driver_win_handle)  #try
 
     def focus_vrchat(self):
+        print("\nFocusing VRchat window")
         rect = win32gui.GetWindowRect(self.vr_chat_handle)
         win32gui.ShowWindow(self.vr_chat_handle, win32con.SW_MAXIMIZE)
         pyautogui.click(rect[0] + 30, rect[1] + 30)
@@ -102,8 +107,11 @@ if __name__ == "__main__":
                 pyautogui.keyDown('ctrl')  
                 pyautogui.press('a')    
                 pyautogui.keyUp('ctrl')
-                pyautogui.press('backspace')    
-                playsound('beepwav.wav')
+                pyautogui.press('backspace')
+                try:    
+                    playsound('beepwav.wav')
+                except:
+                    print("failed to play beep sound")
 
 
             else:
