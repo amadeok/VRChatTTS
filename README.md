@@ -15,3 +15,6 @@ Usage:
 4. Press F3 and the script will focus the keyboard on Balabolka, you should hear a beep at this point
 5. Type what you want to say
 6. Press F3 again and the script will make Balabolka start speaking and will focus the keyboard back to VRchat
+
+Example:
+https://youtu.be/T2Pba1qy0vY
